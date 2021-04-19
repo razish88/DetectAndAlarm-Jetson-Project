@@ -40,3 +40,5 @@ https://github.com/dusty-nv/jetson-inference/blob/master/docs/aux-docker.md
 11) Run the code --> ./detect-and-alarm.py --object_to_detect [object/objects to detect seperated by space] --interval [interval in secs between sending alarm messages] 
 
 Example: ./detect-and-alarm.py --object_to_detect person "cell phone" --interval 300 
+
+Thats mean if you detect person and cell phone in the same picture (both of them must be in the picture, if person or cell phone apear alone don't send alarm) send alarm and check again in loop every 5 min .
